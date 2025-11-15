@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here">
+    <title>My Website</title>
+    
+
+    <!-- Google Fonts (example) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+
+        <nav id="desktop-nav">
+
+            <div class="logo">Developers Go Bag</div>
+
+            <ul class="desktop-links">
+                <li><a href="home.html"><img src="./assets/homeicon.svg" alt="Home icon">Home</a></li>
+                <li><a id="js-btn"><img src="./assets/jsicon.svg" alt="Js Interactivities icon">Js Interactivities</a></li>
+                <li><a href="resources.html"><img src="./assets/sourceicon.svg" alt="Resources icon">Resources</a></li>
+                <li><a href="settings.html"><img src="./assets/settingsicon.svg" alt="Settings icon">Settings</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-interactivities-links">
+            <ul><li><a href="index.html">Hamburger Nav</a></li></ul>
+            <ul><li><a href="accordion.html">Accordion</a></li></ul>
+            <ul><li><a href="scrolltotop.html">Scroll to Top</a></li></ul>
+            <ul><li><a href="popup.html">Pop Up Modal</a></li></ul>
+            <ul><li><a href="formvalidation.html">Form Validation</a></li></ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+    <section class="hero-container">
+        <div class="hero-title">
+
+           <h1> Resources</h1>
+        <p>
+           A curated collection of essential tools, libraries, and references to help developers code 
+        efficiently and effectively. Whether you’re building websites, experimenting with JavaScript, 
+        or styling layouts, these resources provide the foundations, shortcuts, and inspirations you
+        need to accelerate your workflow.
+        </p>
+
+        
+        <h2>Inside, you’ll find:</h2>
+
+        <ul>
+            <li>HTML & CSS Guides: Boilerplates, resets, and quick layout tips.</li>
+
+            <li>JavaScript Essentials: Snippets, event handling, and interactive components.</li>
+
+            <li>Fonts & Icons: Easy-to-use solutions like Google Fonts and Font Awesome.</li>
+
+            <li>Plugins & Utilities: Tools that simplify development and enhance productivity.</li>
+        </ul>
+
+        <p>Think of this section as your developer’s survival kit—everything you need in one place to get projects done faster and smarter.</p>
+
+        </div>
+    </section>
+
+
+    <section id="html-section">
+          <h2>HTML</h2>
+        <h3>HTML Boilerplate</h3>
+        <div class="html-container">
+
+
+            <div class="html-code-container">
+            
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Your website description here"&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+    
+    &lt;!-- Google Fonts Example --&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"&gt;
+
+    &lt;!-- CSS --&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;div class="logo"&gt;Logo&lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;p&gt;This is a sample HTML boilerplate.&lt;/p&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;!-- JavaScript --&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="css-section">
+          <h2>CSS</h2>
+        <h3>CSS GUIDE</h3>
+        <div class="css-container">
+
+
+            <div class="css-code-container">
+                    <pre><code>/* Reset / Normalize */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+</code></pre>
+
+
+
+            </div>
+
+            <div class="flexbox-code-container">
+
+
+                <pre><code>/*Flexbox*/
+
+.flex {
+    display: flex;
+}
+
+/* Direction */
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+
+/* Alignment */
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.align-stretch { align-items: stretch; }
+
+/* Flex child */
+.flex-grow { flex-grow: 1; }
+.flex-shrink { flex-shrink: 1; }
+.flex-wrap { flex-wrap: wrap; }
+</code></pre>
+
+
+            </div>
+
+
+            <div class="grid-code-container">
+                <pre><code>/*Grid*/
+
+.grid {
+    display: grid;
+    gap: 1rem; /* spacing between items */
+}
+
+/* Columns */
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Rows */
+.grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
+.grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
+
+/* Place items */
+.justify-items-start { justify-items: start; }
+.justify-items-center { justify-items: center; }
+.justify-items-end { justify-items: end; }
+
+.align-items-start { align-items: start; }
+.align-items-center { align-items: center; }
+.align-items-end { align-items: end; }
+</code></pre>
+
+            </div>
+
+            </div>
+    </section>
+
+<section id="mediaquery-section">
+        <h2>Mediaquery</h2>
+        <h3>BREAKPOINTS GUIDE</h3>
+
+    <div class="mediaquery-container">
+        <pre><code>/* Traditional Media Queries - Desktop-First (Industry Standard + 480px) */
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+    /* CSS for large desktops / widescreens */
+}
+
+/* Large Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS for desktops */
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* CSS for tablets */
+}
+
+/* Small Screens */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* CSS for small tablets / large phones */
+}
+
+/* Very Small Screens (480px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    /* CSS for smaller phones */
+}
+
+/* Extra Small Screens */
+@media (max-width: 479px) {
+    /* CSS for phones smaller than 480px */
+}
+</code></pre>
+
+    </div>
+</section>
+
+
+    <section class="soon-section">
+        <img src="./assets/morecontentimg.jpg" alt="More Content Soon Image">
+    </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

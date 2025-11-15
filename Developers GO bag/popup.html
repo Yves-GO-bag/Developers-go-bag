@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here">
+    <title>My Website</title>
+    
+
+    <!-- Google Fonts (example) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup.css">
+    
+</head>
+<body>
+
+    <header>
+
+        <nav id="desktop-nav">
+
+            <div class="logo">Developers Go Bag</div>
+
+            <ul class="desktop-links">
+                <li><a href="home.html"><img src="./assets/homeicon.svg" alt="Home icon">Home</a></li>
+                <li><a id="js-btn"><img src="./assets/jsicon.svg" alt="Js Interactivities icon">Js Interactivities</a></li>
+                <li><a href="resources.html"><img src="./assets/sourceicon.svg" alt="Resources icon">Resources</a></li>
+                <li><a href="settings.html"><img src="./assets/settingsicon.svg" alt="Settings icon">Settings</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-interactivities-links">
+            <ul><li><a href="index.html">Hamburger Nav</a></li></ul>
+            <ul><li><a href="accordion.html">Accordion</a></li></ul>
+            <ul><li><a href="scrolltotop.html">Scroll to Top</a></li></ul>
+            <ul><li><a href="popup.html">Pop Up Modal</a></li></ul>
+            <ul><li><a href="formvalidation.html">Form Validation</a></li></ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="interactivity-container">
+            <h2>Modal Pop Up</h2>
+            <!--DEMO CODES-->
+            <div class="hamburger-container">
+            
+                <button class="btn btn-dark" id="open">
+                    Click here to open the modal!
+                </button>
+
+                <div class="mdl-container">
+                    <div class="mdl">
+                        <h1>Modal Title</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <button class="btn btn-dark" id="close">Close</button>
+                    </div>
+                </div>
+
+
+             </div>   
+
+                        <!--DEMO CODES-->
+
+                      
+
+            </div>
+
+            <div class="code-container">
+                <div class="flex-html flex-item"> 
+
+                    <span>HTML</span>
+                    
+                    <pre><code>
+&lt;div class="mdl-container"&gt;
+    &lt;button class="btn btn-dark" id="open"&gt;
+        Click here to open the modal!
+    &lt;/button&gt;
+
+    &lt;div class="mdl-container"&gt;
+        &lt;div class="mdl"&gt;
+            &lt;h1&gt;Modal Title&lt;/h1&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            &lt;/p&gt;
+            &lt;button class="btn btn-dark" id="close"&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+                </div>
+                <div class="flex-css flex-item">
+                    <span>CSS</span>
+                
+                <div class="code-snippet">
+  <pre><code>
+.mdl-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    color: black;
+}
+
+.mdl-container.show {
+    opacity: 1; 
+    pointer-events: auto;
+}
+
+.mdl {
+    background: white;
+    height: 250px;
+    width: 300px;
+    max-width: 80%;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px 5px #00ffff;
+}
+  </code></pre>
+</div>
+
+                
+                </div>
+                <div class="flex-javascript flex-item">
+                    <span>JS</span>
+                
+                <div class="code-snippet">
+            <pre><code>
+const open = document.getElementById("open");
+const close = document.getElementById("close");
+const mdl = document.querySelector(".mdl-container");
+
+open.addEventListener("click", () => {
+    mdl.classList.add('show')
+})
+close.addEventListener("click", () => {
+    mdl.classList.remove('show')
+})
+  </code></pre>
+</div>
+
+                
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+     <script src="script.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 

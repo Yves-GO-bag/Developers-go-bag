@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here">
+    <title>My Website</title>
+    
+
+    <!-- Google Fonts (example) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+
+        <nav id="desktop-nav">
+
+            <div class="logo">Developers Go Bag</div>
+
+            <ul class="desktop-links">
+                <li><a href="home.html"><img src="./assets/homeicon.svg" alt="Home icon">Home</a></li>
+                <li><a id="js-btn"><img src="./assets/jsicon.svg" alt="Js Interactivities icon">Js Interactivities</a></li>
+                <li><a href="resources.html"><img src="./assets/sourceicon.svg" alt="Resources icon">Resources</a></li>
+                    <li><a href="settings.html"><img src="./assets/settingsicon.svg" alt="Settings icon">Settings</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-interactivities-links">
+            <ul><li><a href="index.html">Hamburger Nav</a></li></ul>
+            <ul><li><a href="accordion.html">Accordion</a></li></ul>
+            <ul><li><a href="scrolltotop.html">Scroll to Top</a></li></ul>
+            <ul><li><a href="popup.html">Pop Up Modal</a></li></ul>
+            <ul><li><a href="formvalidation.html">Form Validation</a></li></ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="interactivity-container">
+            <h2>Hamburger Navigation</h2>
+            <!--DEMO CODES-->
+            <div class="hamburger-container">
+                    <div class="demo-hamburger-menu"> 
+                        <div class="demo-hamburger-icon" onclick="toggleMenu()">
+                             <span></span> 
+                             <span></span> 
+                             <span></span> 
+                            </div> 
+                            <div class="demo-menu-links"> 
+                                <li><a href="#about" onclick="toggleMenu()">About</a></li> 
+                                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+                                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+                                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                            </div>
+                         </div> 
+                        </nav> 
+                        <!--DEMO CODES-->
+
+                      
+
+            </div>
+
+            <div class="code-container">
+                <div class="flex-html flex-item"> 
+
+                    <span>HTML</span>
+                    
+                    <pre><code>&lt;nav id="demo-hamburger-nav"&gt;
+    &lt;div class="hamburger-container"&gt;Hamburger Navigation
+        &lt;div class="demo-hamburger-menu"&gt; 
+            &lt;div class="demo-hamburger-icon" onclick="toggleMenu()"&gt;
+                &lt;span&gt;&lt;/span&gt; 
+                &lt;span&gt;&lt;/span&gt; 
+                &lt;span&gt;&lt;/span&gt; 
+            &lt;/div&gt; 
+            &lt;div class="demo-menu-links"&gt; 
+                &lt;li&gt;&lt;a href="#about" onclick="toggleMenu()"&gt;About&lt;/a&gt;&lt;/li&gt; 
+                &lt;li&gt;&lt;a href="#experience" onclick="toggleMenu()"&gt;Experience&lt;/a&gt;&lt;/li&gt; 
+                &lt;li&gt;&lt;a href="#projects" onclick="toggleMenu()"&gt;Projects&lt;/a&gt;&lt;/li&gt; 
+                &lt;li&gt;&lt;a href="#contact" onclick="toggleMenu()"&gt;Contact&lt;/a&gt;&lt;/li&gt; 
+            &lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+
+
+                </div>
+                <div class="flex-css flex-item">
+                    <span>CSS</span>
+                
+                <div class="code-snippet">
+  <pre><code>
+/* ========== HAMBURGER NAVIGATION ========== */
+#demo-hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative; /* changed from fixed */
+    width: 100%;
+    z-index: 999;
+    padding: 0 5%;
+}
+
+/* ========== HAMBURGER MENU DROPDOWN INSIDE CONTAINER ========== */
+
+/* HAMBURGER MENU */
+
+.demo-hamburger-menu {
+    position: relative;
+    display: inline-block;    
+}
+
+.demo-hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.demo-hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.demo-menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: lightgray;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0;                
+}
+
+.demo-menu-links.open {
+    max-height: 300px;        
+    padding: 1rem;              
+}
+
+.demo-menu-links li {
+    list-style:  none;
+}
+
+.demo-menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.demo-menu-links.open {
+    max-height: 300px;
+}
+
+.demo-hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.demo-hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.demo-hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.demo-hamburger-icon span:first-child {
+    transform: none;
+    opacity: 1;
+}
+  </code></pre>
+</div>
+
+                
+                </div>
+                <div class="flex-javascript flex-item">
+                    <span>JS</span>
+                
+                <div class="code-snippet">
+            <pre><code>
+function toggleMenu() {
+    const menu = document.querySelector('.demo-menu-links');
+    const icon = document.querySelector('.demo-hamburger-icon');
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+};
+  </code></pre>
+</div>
+
+                
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

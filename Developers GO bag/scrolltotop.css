@@ -1,0 +1,214 @@
+/* CSS Reset / Normalize */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(13, 11, 11);
+}
+
+
+/*NAVIGATION SECTION*/
+
+#desktop-nav,
+.desktop-links,
+.desktop-links li,
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+#desktop-nav {
+    height: 12vh;
+    background-color: rgb(1, 1, 1);
+}
+
+.desktop-links li {
+    list-style: none;
+    padding: 1rem;
+    align-items: flex-end;
+}
+
+.desktop-links li a {
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.logo {
+    align-items: center;
+}
+
+.desktop-links li a:hover {
+    border-radius: 5px;
+    background-color: rgb(30, 26, 26);
+}
+
+
+/*DESKTOP LINKS ICON*/
+
+.desktop-links li a img {
+    height: 1.5rem;
+    width: auto;
+}
+
+/*INTERACTIVITY SECTION*/
+
+.code-container,
+.flex-item, 
+.hamburger-container,
+.code-container {
+    display: flex;
+}
+
+
+.flex-item {
+    justify-content: center;
+}
+
+#interactivity-container {
+    height: 200vh;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+
+#interactivity-container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.hamburger-container {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255 0);
+    border: 1px solid gray;
+    height: 30vh;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.code-container {
+    width: 100%;
+    gap: 0.7rem;
+
+}
+
+.flex-item {
+    background-color: rgb(34, 33, 33);
+    height: 40vh;
+    width: 33.33%;
+    border-radius: 10px;    
+}
+
+
+.flex-item span {
+    text-align: center;
+    padding: 1rem;
+}
+
+.flex-html,
+.flex-css,
+.flex-javascript {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+
+
+#interactivity-container {
+    height: 46vh;
+
+}
+
+.flex-item {
+    height: 40vh;
+    width: 33.33%
+}
+
+.scroll-container {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255 0);
+    border: 1px solid gray;
+    height: 30vh;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    margin-left: 35%;
+}
+
+
+
+
+/*SCROLL STYLES*/
+
+/* Scrollbar styling for code containers */
+.flex-html,
+.flex-css,
+.flex-javascript {
+    overflow-y: scroll;
+    scrollbar-width: thin;              /* Firefox */
+    scrollbar-color: #555 #1e1e1e;      /* thumb color / track color for Firefox */
+}
+
+/* Webkit browsers: Chrome, Edge, Safari */
+.flex-html::-webkit-scrollbar,
+.flex-css::-webkit-scrollbar,
+.flex-javascript::-webkit-scrollbar {
+    width: 8px;
+}
+
+.flex-html::-webkit-scrollbar-track,
+.flex-css::-webkit-scrollbar-track,
+.flex-javascript::-webkit-scrollbar-track {
+    background: #1e1e1e;  /* track color */
+    border-radius: 8px;
+}
+
+.flex-html::-webkit-scrollbar-thumb,
+.flex-css::-webkit-scrollbar-thumb,
+.flex-javascript::-webkit-scrollbar-thumb {
+    background-color: #555;  /* thumb color */
+    border-radius: 8px;
+    border: 2px solid #2a2a2a; /* padding around thumb */
+}
+
+.flex-html::-webkit-scrollbar-thumb:hover,
+.flex-css::-webkit-scrollbar-thumb:hover,
+.flex-javascript::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* hover effect */
+}
+
+
+
+/*DEMO NAV BAR */
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*DEMO TEXT*/
+pre code {
+    font-size: 0.8rem;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+/* CSS Reset / Normalize */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(13, 11, 11);
+}
+
+/*SCROLL CONTAINER*/
+
+.scroll-container {
+    position: relative;
+    height: 35vh;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    overflow-y: scroll;
+    padding: 0 6rem;
+}
+
+.scroll-container p{
+    padding-bottom: 1rem;
+}
+
+#interactivity-container {
+    height: 46vh;
+}
+
+/*SCROLL BUTTON*/
+
+#btnScrollToTop img {
+    border-radius: 100px;
+    position: absolute;
+    right: 0.5rem;
+    bottom: -236vh;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#btnScrollToTop img:hover {
+    height: 6.3rem;
+    box-shadow: 0 0 20px 5px #00ffff;
+}
+
