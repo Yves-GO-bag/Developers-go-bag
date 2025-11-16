@@ -41,6 +41,11 @@ html {
   width: 300px;
 }
 
+.accordion-container {
+  display: flex;
+  justify-content: center;
+}
+
 .accordion-item {
   margin-bottom: 5px;
 }

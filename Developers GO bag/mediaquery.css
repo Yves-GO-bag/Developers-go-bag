@@ -1,0 +1,72 @@
+/* Traditional Media Queries - Desktop-First (Industry Standard + 480px) */
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+    /* CSS for large desktops / widescreens */
+
+/*HOME SECTION*/
+
+    #hero-container {
+        margin-top: 3rem;
+    height: 110vh;
+    }
+
+/*HAMBURGER NAVIGATION PAGE*/ 
+
+    .hamburger-container {
+        min-width: 30%;
+    }
+
+}
+
+/* Large Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS for desktops */
+
+/*HOME SECTION*/
+
+        #hero-container {
+            margin-top: 3rem;
+        }
+
+/*HAMBURGER NAVIGATION PAGE*/ 
+
+    .hamburger-container {
+        min-width: 30%;
+    }
+
+
+
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* CSS for tablets */
+
+
+/*HOME SECTION*/
+    #hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-container img {
+        height: 16rem;
+    }
+
+    #hero-container .btn {
+        height: 12rem;
+    }
+
+/*HAMBURGER NAVIGATION PAGE*/ 
+
+    .hamburger-container {
+        min-width: 30%;
+    }
+
+
+
+
+}
+
+

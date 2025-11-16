@@ -20,10 +20,13 @@ html {
     position: relative;
     height: 35vh;
     border-radius: 10px;
-    width: 100%;
+    width: 33%;
     border: 1px solid gray;
     overflow-y: scroll;
-    padding: 0 6rem;
+    padding: 1rem 3rem;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
 
 .scroll-container p{
@@ -32,6 +35,9 @@ html {
 
 #interactivity-container {
     height: 46vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*SCROLL BUTTON*/
@@ -39,10 +45,11 @@ html {
 #btnScrollToTop img {
     border-radius: 100px;
     position: absolute;
-    right: 0.5rem;
-    bottom: -236vh;
+    right: 10px;
+    bottom: -385vh;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    z-index: 999;
 }
 
 #btnScrollToTop img:hover {

@@ -12,6 +12,7 @@ html {
     font-size: 16px;
     color: white;
     background-color: rgb(13, 11, 11);
+    overflow-y: visible;
 }
 
 
@@ -189,89 +190,75 @@ pre code {
 
 
 
-/*NAV LINKS*/
-
+/* NAV LINKS — CLEAN + CONSOLIDATED */
 
 .nav-interactivities-links {
     position: absolute;
+    top: 11vh;                  /* adjust based on header height */
     background-color: rgb(1, 1, 1);
     border-radius: 5px;
-    width: 9rem;
-    height: 9rem;
+    width: 100%;
     text-align: center;
     padding: 10px;
     z-index: 999;
-opacity: 0;
-  visibility: hidden;
-  transform: translateY(-15px); /* start slightly above */
-  transition: 
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    visibility 0.3s;
+
+    /* Hide state */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+
+    /* Animation */
+    transition: 
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .desktop-links li {
     list-style: none;
     padding: 1rem;
-    align-items: flex-end;
-    position: relative; /* <-- add this */
+    position: relative;
 }
 
-
-.nav-interactivities-links ul li {
+.nav-interactivities-links ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-interactivities-links ul li a {
     color: lightgray;
     text-decoration: none;
-    transition: all 0.3s;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    transition: color 0.3s, background 0.3s, padding 0.3s;
+}
+
+.nav-interactivities-links ul li:hover {
+    border-radius: 10px;
 }
 
 .nav-interactivities-links ul li a:hover {
     color: white;
-}
-
-.nav-interactivities-links.show {
-   
-    z-index: 999;
-    right: 32.30vw;
-    top: 11vh;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0); 
+    background-color: gray;
+    padding: 0 1rem;
+    border-radius: 10px;
 }
 
 
-/*TEST*/
-.nav-interactivities-links {
-    position: absolute;  /* keep absolute all the time */
-    top: 100%;           /* right below the button */
-    right: 0;            /* align with button */
-    background-color: rgb(1, 1, 1);
-    border-radius: 5px;
-    width: 9rem;
-    text-align: center;
-    padding: 10px;
-    z-index: 999;
-    
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-15px); /* start slightly above */
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
+/* VISIBLE / SHOW STATE */
 .nav-interactivities-links.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
+
+
 
 
 /*LINK BUTTON RESET*/
